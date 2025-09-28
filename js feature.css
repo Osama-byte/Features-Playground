@@ -1,0 +1,131 @@
+ :root {
+     --bg: #0f172a;
+     --card: #1e293b;
+     --accent: #38bdf8;
+     --accent-hover: #0ea5e9;
+     --muted: #94a3b8;
+     color-scheme: dark;
+ }
+
+ * {
+     box-sizing: border-box;
+     font-family: "Segoe UI", Roboto, Inter, sans-serif;
+ }
+
+ body {
+     margin: 0;
+     background: radial-gradient(circle at top, #0f172a, #020617);
+     color: #e2e8f0;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 24px;
+ }
+
+ .wrap {
+     width: 100%;
+     max-width: 1100px;
+ }
+
+ header {
+     margin-bottom: 24px;
+     text-align: center;
+ }
+
+ header h1 {
+     margin: 0;
+     font-size: 28px;
+     color: var(--accent);
+ }
+
+ header p {
+     margin: 4px 0 0;
+     color: var(--muted);
+     font-size: 14px;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: 1fr 350px;
+     gap: 20px;
+ }
+
+ .card {
+     background: var(--card);
+     border-radius: 16px;
+     padding: 20px;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+     transition: transform .2s;
+ }
+
+ .card:hover {
+     transform: translateY(-3px);
+ }
+
+ label {
+     display: block;
+     font-size: 13px;
+     margin-bottom: 6px;
+     color: var(--muted);
+ }
+
+ input[type="text"] {
+     width: 100%;
+     padding: 12px;
+     border-radius: 10px;
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     background: rgba(255, 255, 255, 0.03);
+     color: inherit;
+     font-size: 14px;
+ }
+
+ button {
+     margin-top: 12px;
+     padding: 10px 16px;
+     border-radius: 10px;
+     border: none;
+     background: var(--accent);
+     color: #020617;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background .2s, transform .2s;
+ }
+
+ button:hover {
+     background: var(--accent-hover);
+     transform: scale(1.03);
+ }
+
+ .btn-secondary {
+     background: #334155;
+     color: #e2e8f0;
+ }
+
+ .btn-secondary:hover {
+     background: #475569;
+ }
+
+ pre {
+     white-space: pre-wrap;
+     background: rgba(0, 0, 0, 0.35);
+     padding: 14px;
+     border-radius: 12px;
+     max-height: 350px;
+     overflow: auto;
+     font-size: 13px;
+ }
+
+ ul.small {
+     font-size: 13px;
+     color: var(--muted);
+     margin: 8px 0 0;
+     padding-left: 18px;
+ }
+
+ footer {
+     margin-top: 16px;
+     font-size: 12px;
+     color: var(--muted);
+     text-align: center;
+ }
