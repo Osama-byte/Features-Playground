@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js feature.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1>✨ JavaScript Features Playground</h1>
+            <p>Explore loops, conditionals, try/catch, string & number methods, and variable scopes in one interactive
+                page.
+            </p>
+        </header>
+
+        <div class="grid">
+            <section class="card">
+                <h3>Play with Strings & Numbers</h3>
+                <label>Sentence Input:</label>
+                <input id="inputString" type="text" placeholder="e.g. Hello JavaScript"
+                    value="Hello, world! JavaScript rules">
+
+                <label style="margin-top:12px">Numbers (comma separated):</label>
+                <input id="inputNumbers" type="text" placeholder="e.g. 10, 2.5, 30, foo" value="10, 2.5, 30, foo">
+
+                <div style="display:flex; gap:10px; flex-wrap:wrap">
+                    <button id="runBtn">▶ Run Demo</button>
+                    <button id="clearBtn" class="btn-secondary">🧹 Clear</button>
+                </div>
+
+                <h4 style="margin-top:16px; font-size:14px; color:var(--muted)">Output</h4>
+                <pre id="output">(Click "Run Demo" to execute)</pre>
+            </section>
+
+            <aside class="card">
+                <h3>📘 Features Used</h3>
+                <ul class="small">
+                    <li>Loops: <code>for</code>, <code>while</code>, <code>for...of</code></li>
+                    <li>Conditionals: <code>if/else</code>, <code>switch</code></li>
+                    <li>Error handling: <code>try/catch/finally</code></li>
+                    <li>String methods: <code>toUpperCase, split, slice, replace</code></li>
+                    <li>Number methods: <code>parseInt, parseFloat, toFixed, Math.round</code></li>
+                    <li>Variables: global, local, block scope</li>
+                </ul>
+
+                <h4 style="margin-top:14px">💡 Tip</h4>
+                <p class="small" style="color:var(--muted)">Modify the inputs and re-run to see how the code behaves
+                    with
+                    different data.</p>
+            </aside>
+        </div>
+
+        <footer>Made for learning — tweak the code to explore more!</footer>
+    </div>
+    <script src="js feature.js"></script>
+</body>
+
+</html>
